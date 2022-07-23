@@ -1,0 +1,130 @@
+@font-face {
+    font-family: "Outfit";
+    src: url("../assets/fonts/Outfit-VariableFont_wght.ttf");
+}
+
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: hsl(217, 54%, 11%);
+    font-family: "Outfit";
+}
+
+.card {
+    margin: auto;
+    padding: 20px;
+    width: 280px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 24px;
+    color: hsl(215, 51%, 70%);
+}
+
+.equilibrium-img-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.equilibrium-img {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.cyan-filter {
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 280px;
+    height: 280px;
+    background-color: hsla(178, 100%, 50%, 0.5);
+    border-radius: 10px;
+}
+
+.view-icon {
+    display: none;
+    position: absolute;
+    top: calc(50% - 24px);
+    left: calc(50% - 24px);
+}
+
+.equilibrium-img-container:hover .cyan-filter {
+    display: block;
+    cursor: pointer;
+}
+
+.equilibrium-img-container:hover .view-icon {
+    display: block;
+    cursor: pointer;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+a {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+}
+
+a:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.equilibrium-desc {
+    font-weight: 300;
+}
+
+.equilibrium-stats {
+    display: flex;
+    margin: 1.5rem 0;
+    padding: 0;
+    list-style: none;
+}
+
+.equilibrium-stats > li {
+    flex: 1;
+    display: flex;
+}
+
+.equilibrium-stats > li > img {
+    display: block;
+    margin-right: 0.4rem;
+}
+
+.equilibrium-value {
+    color: hsl(178, 100%, 50%);
+}
+
+.equilibrium-time {
+    justify-content: end;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1rem;
+    border-top: 1px solid hsl(215, 32%, 27%);
+}
+
+.creator-img {
+    width: 30px;
+    height: 30px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+}
+
+.creator {
+    margin: 0 0 0 1rem;
+    line-height: 30px;
+    font-size: 0.9rem;
+}
+
+.creator-name {
+    color:hsl(0, 0%, 100%);
+}
